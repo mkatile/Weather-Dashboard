@@ -1,14 +1,8 @@
-#header{
-  background-size: cover;
-  background-position-y: 40%;
-  color:white;
-  background-color:rgb(22, 32, 77);
-  position:relative !important;
-}
 h1 {
   text-align: center;
   margin-bottom: 0%;
   background-image: linear-gradient(to right, rgb(67, 51, 6), rgb(10, 75, 30) , rgb(13, 70, 130));
+  color: white
 }
 #forecast {
   position: absolute;
