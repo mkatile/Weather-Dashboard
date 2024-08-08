@@ -3,16 +3,16 @@ $(document).ready(function () {
   $("#search-button").on("click", function () {
     var searchTerm = $("#search-value").val().trim(); // Get search term and trim any extra spaces
     $("#search-value").val(""); // Empty input field
-    if (searchTerm) { 
+    if (searchTerm) {
       weatherFunction(searchTerm);
       weatherForecast(searchTerm);
     }
   });
-  
+
   // Trigger search on Enter key press
   $("#search-value").keypress(function (event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
-    if (keycode === 13) { 
+    if (keycode === 13) {
       var searchTerm = $("#search-value").val().trim();
       $("#search-value").val(""); // Empty input field
       if (searchTerm) { // Ensure the search term is not empty
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
       $.ajax({
         type: "GET",
-        url: "https://api.openweathermap.org/data/2.5/uvi?appid=2dd70f96425193662876c70ffc46427e&lat=" + lat + "&lon=" + lon,
+        url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=2dd70f96425193662876c70ffc46427e",
       }).then(function (response) {
         var uvResponse = response.value;
         var uvIndex = $("<p>").addClass("card-text").text("UV Index: ");
