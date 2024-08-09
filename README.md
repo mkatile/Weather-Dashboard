@@ -1,5 +1,10 @@
 # Weather-Dashboard
 
+## Description
+I built a weather dashboard that runs in the browser and feature dynamically updated HTML and CSS.
+
+I used the 5 Day Weather ForecastLinks to retrieve weather data for cities.
+
 ## User Story
 AS A traveler
 I WANT to see the weather outlook for multiple cities

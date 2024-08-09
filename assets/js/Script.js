@@ -45,7 +45,7 @@ $(document).ready(function () {
   function weatherFunction(searchTerm) {
     $.ajax({
       type: "GET",
-      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=2dd70f96425193662876c70ffc46427e",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + searchTerm + "&appid=0022907a25d60eb4489974f0c50f1352",
       success: function (data) {
         if (history.indexOf(searchTerm) === -1) {
           history.push(searchTerm);
@@ -68,7 +68,7 @@ $(document).ready(function () {
 
         $.ajax({
           type: "GET",
-          url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=2dd70f96425193662876c70ffc46427e",
+          url: "https://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + lon + "&appid=0022907a25d60eb4489974f0c50f1352",
           success: function (response) {
             var uvResponse = response.value;
             var uvIndex = $("<p>").addClass("card-text").text("UV Index: ");
@@ -105,7 +105,7 @@ $(document).ready(function () {
   function weatherForecast(searchTerm) {
     $.ajax({
       type: "GET",
-      url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appid=2dd70f96425193662876c70ffc46427e",
+      url: "https://api.openweathermap.org/data/2.5/forecast?q=" + searchTerm + "&appid=0022907a25d60eb4489974f0c50f1352",
       success: function (data) {
         $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
 
