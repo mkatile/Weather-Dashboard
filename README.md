@@ -23,4 +23,5 @@ THEN I am again presented with current and future conditions for that city.
 
 
 
-Deployment [link](http://127.0.0.1:3002/assets/index.html)
+Deployment [link](https://aesthetic-kringle-de8fa0.netlify.app)
+
